@@ -14,12 +14,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Times New Roman", Times, serif;
-    background-color: #ffffff;
-    color: #111111;
+    background-color: white;
+    color: black;
 }
 
 a {
-    color: #111111;
+    color: black;
     text-decoration: none;
 }
 
@@ -36,8 +36,8 @@ a:hover {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    border-left: 1px solid #111;
-    border-right: 1px solid #111;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 
@@ -49,19 +49,25 @@ a:hover {
     display: grid;
     grid-template-columns: 160px 1fr;
     min-height: 115px;
-    border-bottom: 1px solid #111;
+    border-bottom: 1px solid black;
 }
+
+
+/* LOGO */
 
 .logo-area {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid #111;
+    border-right: 1px solid black;
     font-size: 34px;
     font-weight: normal;
     text-align: center;
     padding: 15px;
 }
+
+
+/* HEADER CONTENT */
 
 .header-content {
     display: flex;
@@ -82,14 +88,21 @@ a:hover {
 
 .top-navigation {
     min-height: 30px;
-    border-top: 1px solid #111;
+    border-top: 1px solid black;
+
     display: flex;
-    justify-content: center;
+
+    /* MOVES NAVIGATION TO FAR RIGHT */
+    justify-content: flex-end;
+
     align-items: center;
+
+    /* SPACE FROM RIGHT EDGE */
+    padding-right: 15px;
 }
 
 .top-navigation a {
-    padding: 6px 18px;
+    padding: 6px 15px;
     font-size: 17px;
 }
 
@@ -119,7 +132,7 @@ a:hover {
 ========================= */
 
 .left-sidebar {
-    border-right: 1px solid #111;
+    border-right: 1px solid black;
     padding: 35px 20px;
 }
 
@@ -158,14 +171,21 @@ a:hover {
     padding: 18px 25px 40px 25px;
 }
 
+
+/* HERO IMAGE */
+
 .hero-image {
     width: 100%;
     height: 190px;
-    border: 1px solid #111;
+
+    border: 1px solid black;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     margin-bottom: 25px;
+
     overflow: hidden;
 }
 
@@ -179,6 +199,9 @@ a:hover {
     font-size: 25px;
 }
 
+
+/* MAIN HEADINGS */
+
 .main-content h1 {
     font-size: 34px;
     font-weight: normal;
@@ -191,6 +214,9 @@ a:hover {
     font-weight: normal;
 }
 
+
+/* MAIN PARAGRAPHS */
+
 .main-content p {
     font-size: 18px;
     line-height: 1.6;
@@ -202,7 +228,7 @@ a:hover {
 ========================= */
 
 .right-sidebar {
-    border-left: 1px solid #111;
+    border-left: 1px solid black;
     padding: 35px 18px;
 }
 
@@ -233,7 +259,7 @@ a:hover {
 ========================= */
 
 .site-footer {
-    border-top: 1px solid #111;
+    border-top: 1px solid black;
     padding: 12px 20px;
     text-align: center;
     font-size: 15px;
@@ -245,7 +271,7 @@ a:hover {
 
 
 /* =========================
-   MOBILE RESPONSIVE DESIGN
+   MOBILE DESIGN
 ========================= */
 
 @media screen and (max-width: 800px) {
@@ -261,11 +287,12 @@ a:hover {
 
     .logo-area {
         border-right: none;
-        border-bottom: 1px solid #111;
+        border-bottom: 1px solid black;
         padding: 20px;
     }
 
     .top-navigation {
+        justify-content: flex-end;
         flex-wrap: wrap;
         padding: 5px;
     }
@@ -281,7 +308,7 @@ a:hover {
 
     .left-sidebar {
         border-right: none;
-        border-bottom: 1px solid #111;
+        border-bottom: 1px solid black;
         padding: 20px;
     }
 
@@ -293,7 +320,7 @@ a:hover {
 
     .right-sidebar {
         border-left: none;
-        border-top: 1px solid #111;
+        border-top: 1px solid black;
         padding: 20px;
     }
 
