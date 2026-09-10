@@ -1,0 +1,307 @@
+/* =========================
+   GENERAL PAGE STYLING
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+a {
+    color: #111111;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   MAIN WEBSITE CONTAINER
+========================= */
+
+.website-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-left: 1px solid #111;
+    border-right: 1px solid #111;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    min-height: 115px;
+    border-bottom: 1px solid #111;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #111;
+    font-size: 34px;
+    font-weight: normal;
+    text-align: center;
+    padding: 15px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-intro {
+    flex: 1;
+    padding: 18px 25px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+
+/* =========================
+   TOP NAVIGATION
+========================= */
+
+.top-navigation {
+    min-height: 30px;
+    border-top: 1px solid #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-navigation a {
+    padding: 6px 18px;
+    font-size: 17px;
+}
+
+.top-navigation a:hover {
+    background-color: #f1f1f1;
+    text-decoration: none;
+}
+
+.top-navigation a.active {
+    font-weight: bold;
+}
+
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 160px 1fr 155px;
+    min-height: 500px;
+}
+
+
+/* =========================
+   LEFT SIDEBAR
+========================= */
+
+.left-sidebar {
+    border-right: 1px solid #111;
+    padding: 35px 20px;
+}
+
+.left-sidebar h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.left-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.left-navigation a {
+    font-size: 17px;
+    line-height: 1.25;
+}
+
+.left-navigation a:hover {
+    text-decoration: underline;
+}
+
+.left-navigation a.active {
+    font-weight: bold;
+}
+
+
+/* =========================
+   CENTER CONTENT
+========================= */
+
+.main-content {
+    padding: 18px 25px 40px 25px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 190px;
+    border: 1px solid #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-placeholder {
+    font-size: 25px;
+}
+
+.main-content h1 {
+    font-size: 34px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.main-content h2 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.main-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   RIGHT SIDEBAR
+========================= */
+
+.right-sidebar {
+    border-left: 1px solid #111;
+    padding: 35px 18px;
+}
+
+.right-sidebar h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.quick-links a {
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+    border-top: 1px solid #111;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.site-footer p {
+    margin: 4px 0;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media screen and (max-width: 800px) {
+
+    .website-container {
+        width: 100%;
+        border: none;
+    }
+
+    .site-header {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-area {
+        border-right: none;
+        border-bottom: 1px solid #111;
+        padding: 20px;
+    }
+
+    .top-navigation {
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    .top-navigation a {
+        padding: 7px 10px;
+        font-size: 15px;
+    }
+
+    .main-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .left-sidebar {
+        border-right: none;
+        border-bottom: 1px solid #111;
+        padding: 20px;
+    }
+
+    .left-navigation {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+    .right-sidebar {
+        border-left: none;
+        border-top: 1px solid #111;
+        padding: 20px;
+    }
+
+    .main-content {
+        padding: 25px 20px;
+    }
+
+    .hero-image {
+        height: 180px;
+    }
+}
