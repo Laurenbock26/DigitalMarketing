@@ -1,304 +1,369 @@
 /* =========================
-   GENERAL PAGE STYLING
+GENERAL PAGE STYLING
 ========================= */
 
 * {
-    box-sizing: border-box;
-}
+  box-sizing: border-box;
+  }
 
 html {
-    scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
 
-    font-family: "Times New Roman", Times, serif;
+```
+font-family: "Times New Roman", Times, serif;
 
-    background-color: white;
+background-color: white;
 
-    color: black;
+color: black;
+```
+
 }
 
 a {
-    color: black;
-    text-decoration: none;
+color: black;
+text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+text-decoration: underline;
 }
 
-
 /* =========================
-   WEBSITE CONTAINER
+WEBSITE CONTAINER
 ========================= */
 
 .website-container {
-    width: 90%;
+width: 90%;
 
-    max-width: 1400px;
+```
+max-width: 1400px;
 
-    margin: 0 auto;
+margin: 0 auto;
 
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+border-left: 1px solid black;
+border-right: 1px solid black;
+```
+
 }
 
-
 /* =========================
-   HEADER
+HEADER
 ========================= */
 
 .site-header {
 
-    display: grid;
+```
+display: grid;
 
-    grid-template-columns: 190px 1fr;
+grid-template-columns: 190px 1fr;
 
-    min-height: 115px;
+min-height: 115px;
 
-    border-bottom: 1px solid black;
+border-bottom: 1px solid black;
+```
+
 }
 
-
 /* =========================
-   LAUREN BOCK
+LAUREN BOCK
 ========================= */
 
 .logo-area {
 
-    display: flex;
+```
+display: flex;
 
-    align-items: center;
+align-items: center;
 
-    justify-content: center;
+justify-content: center;
 
-    border-right: 1px solid black;
+border-right: 1px solid black;
 
-    font-size: 38px;
+font-size: 38px;
 
-    line-height: 1.2;
+line-height: 1.2;
 
-    text-align: center;
+text-align: center;
 
-    padding: 15px;
+padding: 15px;
+```
+
 }
 
-
 /* =========================
-   HEADER RIGHT SIDE
+HEADER RIGHT SIDE
 ========================= */
 
 .header-content {
 
-    display: flex;
+```
+display: flex;
 
-    flex-direction: column;
+flex-direction: column;
+```
+
 }
 
-
 /* =========================
-   HEADER DESCRIPTION
+HEADER DESCRIPTION
 ========================= */
 
 .header-intro {
 
-    flex: 1;
+```
+flex: 1;
 
-    padding: 22px 30px;
+padding: 22px 30px;
 
-    font-size: 20px;
+font-size: 20px;
 
-    line-height: 1.4;
+line-height: 1.4;
+```
+
 }
 
-
 /* =========================
-   TOP NAVIGATION
+TOP NAVIGATION
 ========================= */
 
 .top-navigation {
 
-    min-height: 43px;
+```
+min-height: 43px;
 
-    border-top: 1px solid black;
+border-top: 1px solid black;
 
-    display: flex;
+display: flex;
 
-    align-items: center;
+align-items: center;
 
-    justify-content: flex-end;
+justify-content: flex-end;
 
-    padding-right: 15px;
+padding-right: 15px;
+```
+
 }
 
 .top-navigation a {
 
-    padding: 8px 16px;
+```
+padding: 8px 16px;
 
-    font-size: 20px;
+font-size: 20px;
+```
+
 }
 
 .top-navigation a:hover {
 
-    background-color: #f1f1f1;
+```
+background-color: #f1f1f1;
 
-    text-decoration: none;
+text-decoration: none;
+```
+
 }
-
 
 /* ACTIVE PAGE */
 
 .top-navigation a.active {
 
-    font-weight: bold;
+```
+font-weight: bold;
+```
+
 }
 
-
 /* =========================
-   MAIN CONTENT
+MAIN CONTENT
 ========================= */
 
 .main-content {
 
-    width: 80%;
+```
+width: 80%;
 
-    max-width: 1050px;
+max-width: 1050px;
 
-    margin: 0 auto;
+margin: 0 auto;
 
-    padding: 55px 0 55px 0;
+padding: 55px 0 55px 0;
+```
+
 }
 
-
 /* =========================
-   MAIN CONTENT TEXT
+MAIN CONTENT TEXT
 ========================= */
 
 .content-section {
 
-    width: 100%;
-}
+```
+width: 100%;
+```
 
+}
 
 .content-section h1 {
 
-    font-size: 65px;
+```
+font-size: 65px;
 
-    font-weight: normal;
+font-weight: normal;
 
-    margin-top: 0;
+margin-top: 0;
 
-    margin-bottom: 20px;
+margin-bottom: 55px;
+
+line-height: 1.1;
+```
+
 }
 
+/* FIRST LINE */
+
+.content-section h1 .main-heading {
+
+```
+display: block;
+```
+
+}
+
+/* SECOND LINE */
+
+.content-section h1 .sub-heading {
+
+```
+display: block;
+
+font-size: 45px;
+
+margin-top: 12px;
+```
+
+}
 
 .content-section h2 {
 
-    font-size: 28px;
+```
+font-size: 28px;
 
-    font-weight: normal;
+font-weight: normal;
 
-    margin-top: 30px;
+margin-top: 30px;
 
-    margin-bottom: 12px;
+margin-bottom: 12px;
+```
+
 }
-
 
 .content-section p {
 
-    font-size: 19px;
+```
+font-size: 19px;
 
-    line-height: 1.6;
+line-height: 1.6;
 
-    margin-bottom: 20px;
+margin-bottom: 20px;
+```
+
 }
 
-
 /* =========================
-   FOOTER
+FOOTER
 ========================= */
 
 .site-footer {
 
-    border-top: 1px solid black;
+```
+border-top: 1px solid black;
 
-    padding: 15px 20px;
+padding: 15px 20px;
+
+text-align: center;
+
+font-size: 16px;
+```
+
+}
+
+.site-footer p {
+
+```
+margin: 5px 0;
+```
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media screen and (max-width: 900px) {
+
+```
+.website-container {
+
+    width: 100%;
+
+    border-left: none;
+
+    border-right: none;
+}
+
+
+.site-header {
+
+    grid-template-columns: 1fr;
+}
+
+
+.logo-area {
+
+    border-right: none;
+
+    border-bottom: 1px solid black;
+
+    padding: 20px;
+}
+
+
+.header-intro {
 
     text-align: center;
+}
+
+
+.top-navigation {
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    padding: 5px;
+}
+
+
+.top-navigation a {
+
+    padding: 8px 10px;
 
     font-size: 16px;
 }
 
 
-.site-footer p {
+.main-content {
 
-    margin: 5px 0;
+    width: 90%;
+
+    padding: 40px 0 40px 0;
 }
+```
 
-
-/* =========================
-   MOBILE
-========================= */
-
-@media screen and (max-width: 900px) {
-
-    .website-container {
-
-        width: 100%;
-
-        border-left: none;
-
-        border-right: none;
-    }
-
-
-    .site-header {
-
-        grid-template-columns: 1fr;
-    }
-
-
-    .logo-area {
-
-        border-right: none;
-
-        border-bottom: 1px solid black;
-
-        padding: 20px;
-    }
-
-
-    .header-intro {
-
-        text-align: center;
-    }
-
-
-    .top-navigation {
-
-        justify-content: center;
-
-        flex-wrap: wrap;
-
-        padding: 5px;
-    }
-
-
-    .top-navigation a {
-
-        padding: 8px 10px;
-
-        font-size: 16px;
-    }
-
-
-    .main-content {
-
-        width: 90%;
-
-        padding: 40px 0 40px 0;
-    }
 }
