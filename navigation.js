@@ -33,43 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =========================
-       RIGHT SIDEBAR
-    ========================= */
-
-    const rightSidebar = `
-        <h2>Quick Links</h2>
-
-        <div class="quick-links">
-
-            <a href="about.html">
-                About Me
-            </a>
-
-            <a href="education.html">
-                Education
-            </a>
-
-            <a href="experience.html">
-                Experience
-            </a>
-
-            <a href="contact.html">
-                Contact Me
-            </a>
-
-            <a href="https://www.linkedin.com/" target="_blank">
-                LinkedIn
-            </a>
-
-            <a href="https://github.com/" target="_blank">
-                GitHub
-            </a>
-
-        </div>
-    `;
-
-
-    /* =========================
        HEADER
     ========================= */
 
@@ -95,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =========================
-       ADD HEADER TO PAGE
+       PUT HEADER ON PAGE
     ========================= */
 
     const headerContainer =
@@ -104,20 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (headerContainer) {
 
         headerContainer.innerHTML = header;
-
-    }
-
-
-    /* =========================
-       ADD RIGHT SIDEBAR
-    ========================= */
-
-    const rightContainer =
-        document.getElementById("right-sidebar");
-
-    if (rightContainer) {
-
-        rightContainer.innerHTML = rightSidebar;
 
     }
 
