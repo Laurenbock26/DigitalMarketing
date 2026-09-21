@@ -1,46 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+```
+/* =========================
+   HEADER
+========================= */
 
-    /* =========================
-       TOP NAVIGATION
-    ========================= */
+const header = document.getElementById("site-header");
 
-    const topNavigation = `
-        <nav class="top-navigation">
+if (header) {
 
-            <a href="index.html" data-page="index.html">
-                Home
-            </a>
-
-            <a href="about.html" data-page="about.html">
-                About Me
-            </a>
-
-            <a href="education.html" data-page="education.html">
-                Education
-            </a>
-
-            <a href="experience.html" data-page="experience.html">
-                Professional Experience
-            </a>
-
-            <a href="contact.html" data-page="contact.html">
-                Contact
-            </a>
-
-        </nav>
-    `;
-
-
-    /* =========================
-       HEADER
-    ========================= */
-
-    const header = `
+    header.innerHTML = `
         <header class="site-header">
 
             <div class="logo-area">
-                Lauren<br>Bock
+                Lauren Bock
             </div>
 
             <div class="header-content">
@@ -49,7 +22,19 @@ document.addEventListener("DOMContentLoaded", function () {
                     Personal portfolio and professional website
                 </div>
 
-                ${topNavigation}
+                <nav class="top-navigation">
+
+                    <a href="index.html">Home</a>
+
+                    <a href="about.html">About Me</a>
+
+                    <a href="education.html">Education</a>
+
+                    <a href="experience.html">Professional Experience</a>
+
+                    <a href="involvement.html">Involvement</a>
+
+                </nav>
 
             </div>
 
@@ -58,43 +43,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =========================
-       PUT HEADER ON PAGE
+       ACTIVE PAGE
     ========================= */
 
-    const headerContainer =
-        document.getElementById("site-header");
-
-    if (headerContainer) {
-
-        headerContainer.innerHTML = header;
-
-    }
-
-
-    /* =========================
-       HIGHLIGHT CURRENT PAGE
-    ========================= */
-
-    let currentPage =
+    const currentPage =
         window.location.pathname.split("/").pop();
 
 
-    if (currentPage === "") {
-
-        currentPage = "index.html";
-
-    }
-
-
     const navigationLinks =
-        document.querySelectorAll("[data-page]");
+        document.querySelectorAll(".top-navigation a");
 
 
     navigationLinks.forEach(function (link) {
 
+        const linkPage =
+            link.getAttribute("href");
+
+
         if (
-            link.getAttribute("data-page")
-            === currentPage
+            linkPage === currentPage ||
+            (currentPage === "" &&
+            linkPage === "index.html")
         ) {
 
             link.classList.add("active");
@@ -103,34 +72,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
+}
 
-    /* =========================
-       FOOTER
-    ========================= */
 
-    const footer = `
+/* =========================
+   FOOTER
+========================= */
+
+const footer =
+    document.getElementById("site-footer");
+
+
+if (footer) {
+
+    footer.innerHTML = `
         <footer class="site-footer">
 
-            <p>
-                © 2026 Lauren Bock. All rights reserved.
-            </p>
+            <p>© 2026 Lauren Bock</p>
 
             <p>
-                Contact: your-email@example.com
+                Contact:
+                <a href="mailto:your-email@example.com">
+                    your-email@example.com
+                </a>
             </p>
 
         </footer>
     `;
 
-
-    const footerContainer =
-        document.getElementById("site-footer");
-
-
-    if (footerContainer) {
-
-        footerContainer.innerHTML = footer;
-
-    }
+}
+```
 
 });
