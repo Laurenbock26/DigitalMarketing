@@ -78,9 +78,9 @@ LAUREN BOCK
 ```
 display: flex;
 
-align-items: center;
+align-items: flex-start;
 
-justify-content: center;
+justify-content: flex-start;
 
 border-right: 1px solid black;
 
@@ -88,9 +88,9 @@ font-size: 38px;
 
 line-height: 1.2;
 
-text-align: center;
+text-align: left;
 
-padding: 15px;
+padding: 20px;
 ```
 
 }
@@ -144,15 +144,19 @@ align-items: center;
 
 justify-content: flex-end;
 
-padding-right: 15px;
+gap: 20px;
+
+padding-right: 25px;
 ```
 
 }
 
+/* NAVIGATION LINKS */
+
 .top-navigation a {
 
 ```
-padding: 8px 16px;
+padding: 8px 12px;
 
 font-size: 20px;
 ```
@@ -250,8 +254,6 @@ line-height: 1.1;
 ```
 
 }
-
-/* PUT HEADING ON TWO LINES */
 
 .content-section h1 span {
 
@@ -367,6 +369,8 @@ MOBILE
     justify-content: center;
 
     flex-wrap: wrap;
+
+    gap: 8px;
 
     padding: 5px;
 }
