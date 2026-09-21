@@ -33,39 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =========================
-       LEFT NAVIGATION
-    ========================= */
-
-    const leftNavigation = `
-        <h2>Navigation</h2>
-
-        <nav class="left-navigation">
-
-            <a href="index.html" data-page="index.html">
-                Home
-            </a>
-
-            <a href="about.html" data-page="about.html">
-                About Me
-            </a>
-
-            <a href="education.html" data-page="education.html">
-                Education
-            </a>
-
-            <a href="experience.html" data-page="experience.html">
-                Professional Experience
-            </a>
-
-            <a href="contact.html" data-page="contact.html">
-                Contact
-            </a>
-
-        </nav>
-    `;
-
-
-    /* =========================
        RIGHT SIDEBAR
     ========================= */
 
@@ -110,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <header class="site-header">
 
             <div class="logo-area">
-                Lauren Bock
+                Lauren<br>Bock
             </div>
 
             <div class="header-content">
@@ -135,19 +102,9 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("site-header");
 
     if (headerContainer) {
+
         headerContainer.innerHTML = header;
-    }
 
-
-    /* =========================
-       ADD LEFT NAVIGATION
-    ========================= */
-
-    const leftContainer =
-        document.getElementById("left-navigation");
-
-    if (leftContainer) {
-        leftContainer.innerHTML = leftNavigation;
     }
 
 
@@ -159,7 +116,9 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("right-sidebar");
 
     if (rightContainer) {
+
         rightContainer.innerHTML = rightSidebar;
+
     }
 
 
@@ -170,12 +129,17 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentPage =
         window.location.pathname.split("/").pop();
 
+
     if (currentPage === "") {
+
         currentPage = "index.html";
+
     }
+
 
     const navigationLinks =
         document.querySelectorAll("[data-page]");
+
 
     navigationLinks.forEach(function (link) {
 
@@ -183,7 +147,9 @@ document.addEventListener("DOMContentLoaded", function () {
             link.getAttribute("data-page")
             === currentPage
         ) {
+
             link.classList.add("active");
+
         }
 
     });
@@ -207,11 +173,15 @@ document.addEventListener("DOMContentLoaded", function () {
         </footer>
     `;
 
+
     const footerContainer =
         document.getElementById("site-footer");
 
+
     if (footerContainer) {
+
         footerContainer.innerHTML = footer;
+
     }
 
 });
