@@ -34,8 +34,9 @@ a:hover {
 
 .website-container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
+
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
@@ -47,37 +48,54 @@ a:hover {
 
 .site-header {
     display: grid;
-    grid-template-columns: 160px 1fr;
+
+    grid-template-columns: 190px 1fr;
+
     min-height: 115px;
+
     border-bottom: 1px solid black;
 }
 
 
-/* LOGO */
+/* =========================
+   NAME / LOGO
+========================= */
 
 .logo-area {
     display: flex;
+
     align-items: center;
     justify-content: center;
+
     border-right: 1px solid black;
-    font-size: 34px;
-    font-weight: normal;
+
+    font-size: 38px;
+
     text-align: center;
+
+    line-height: 1.2;
+
     padding: 15px;
 }
 
 
-/* HEADER CONTENT */
+/* =========================
+   HEADER CONTENT
+========================= */
 
 .header-content {
     display: flex;
+
     flex-direction: column;
 }
 
 .header-intro {
     flex: 1;
-    padding: 18px 25px;
-    font-size: 18px;
+
+    padding: 22px 30px;
+
+    font-size: 20px;
+
     line-height: 1.4;
 }
 
@@ -87,27 +105,29 @@ a:hover {
 ========================= */
 
 .top-navigation {
-    min-height: 30px;
+    min-height: 42px;
+
     border-top: 1px solid black;
 
     display: flex;
 
-    /* MOVES NAVIGATION TO FAR RIGHT */
+    /* PUSHES NAVIGATION TO THE FAR RIGHT */
     justify-content: flex-end;
 
     align-items: center;
 
-    /* SPACE FROM RIGHT EDGE */
     padding-right: 15px;
 }
 
 .top-navigation a {
-    padding: 6px 15px;
-    font-size: 17px;
+    padding: 8px 16px;
+
+    font-size: 20px;
 }
 
 .top-navigation a:hover {
     background-color: #f1f1f1;
+
     text-decoration: none;
 }
 
@@ -121,105 +141,102 @@ a:hover {
 ========================= */
 
 .main-layout {
+
+    /* ONLY MAIN CONTENT + RIGHT SIDEBAR */
     display: grid;
-    grid-template-columns: 160px 1fr 155px;
-    min-height: 500px;
+
+    grid-template-columns: 1fr 180px;
+
+    min-height: 600px;
 }
 
 
 /* =========================
-   LEFT SIDEBAR
-========================= */
-
-.left-sidebar {
-    border-right: 1px solid black;
-    padding: 35px 20px;
-}
-
-.left-sidebar h2 {
-    font-size: 20px;
-    font-weight: normal;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.left-navigation {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.left-navigation a {
-    font-size: 17px;
-    line-height: 1.25;
-}
-
-.left-navigation a:hover {
-    text-decoration: underline;
-}
-
-.left-navigation a.active {
-    font-weight: bold;
-}
-
-
-/* =========================
-   CENTER CONTENT
+   CENTER / MAIN CONTENT
 ========================= */
 
 .main-content {
-    padding: 18px 25px 40px 25px;
+
+    padding: 25px 35px 45px 35px;
 }
 
 
-/* HERO IMAGE */
+/* =========================
+   HERO IMAGE
+========================= */
 
 .hero-image {
+
     width: 100%;
-    height: 190px;
+
+    height: 255px;
 
     border: 1px solid black;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 
     overflow: hidden;
 }
 
 .hero-image img {
+
     width: 100%;
+
     height: 100%;
+
     object-fit: cover;
 }
 
 .hero-placeholder {
-    font-size: 25px;
+
+    font-size: 30px;
 }
 
 
-/* MAIN HEADINGS */
+/* =========================
+   MAIN HEADINGS
+========================= */
 
 .main-content h1 {
-    font-size: 34px;
+
+    font-size: 38px;
+
     font-weight: normal;
+
     margin-top: 0;
-    margin-bottom: 15px;
+
+    margin-bottom: 20px;
 }
 
 .main-content h2 {
-    font-size: 25px;
+
+    font-size: 27px;
+
     font-weight: normal;
+
+    margin-top: 30px;
+
+    margin-bottom: 10px;
 }
 
 
-/* MAIN PARAGRAPHS */
+/* =========================
+   MAIN PARAGRAPHS
+========================= */
 
 .main-content p {
-    font-size: 18px;
+
+    font-size: 19px;
+
     line-height: 1.6;
+
+    margin-bottom: 20px;
 }
 
 
@@ -228,28 +245,41 @@ a:hover {
 ========================= */
 
 .right-sidebar {
+
     border-left: 1px solid black;
-    padding: 35px 18px;
+
+    padding: 35px 22px;
 }
 
 .right-sidebar h2 {
-    font-size: 20px;
+
+    font-size: 23px;
+
     font-weight: normal;
+
     margin-top: 0;
+
+    margin-bottom: 25px;
 }
 
 .quick-links {
+
     display: flex;
+
     flex-direction: column;
-    gap: 13px;
+
+    gap: 18px;
 }
 
 .quick-links a {
-    font-size: 16px;
+
+    font-size: 18px;
+
     line-height: 1.3;
 }
 
 .quick-links a:hover {
+
     text-decoration: underline;
 }
 
@@ -259,14 +289,19 @@ a:hover {
 ========================= */
 
 .site-footer {
+
     border-top: 1px solid black;
-    padding: 12px 20px;
+
+    padding: 15px 20px;
+
     text-align: center;
-    font-size: 15px;
+
+    font-size: 16px;
 }
 
 .site-footer p {
-    margin: 4px 0;
+
+    margin: 5px 0;
 }
 
 
@@ -274,61 +309,73 @@ a:hover {
    MOBILE DESIGN
 ========================= */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
     .website-container {
+
         width: 100%;
-        border: none;
+
+        border-left: none;
+
+        border-right: none;
     }
 
     .site-header {
+
         grid-template-columns: 1fr;
     }
 
     .logo-area {
+
         border-right: none;
+
         border-bottom: 1px solid black;
+
         padding: 20px;
     }
 
+    .header-intro {
+
+        text-align: center;
+    }
+
     .top-navigation {
-        justify-content: flex-end;
+
+        justify-content: center;
+
         flex-wrap: wrap;
+
         padding: 5px;
     }
 
     .top-navigation a {
-        padding: 7px 10px;
-        font-size: 15px;
+
+        padding: 8px 10px;
+
+        font-size: 16px;
     }
 
     .main-layout {
+
         grid-template-columns: 1fr;
     }
 
-    .left-sidebar {
-        border-right: none;
-        border-bottom: 1px solid black;
-        padding: 20px;
-    }
-
-    .left-navigation {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 12px 20px;
-    }
-
     .right-sidebar {
+
         border-left: none;
+
         border-top: 1px solid black;
-        padding: 20px;
+
+        padding: 25px;
     }
 
     .main-content {
+
         padding: 25px 20px;
     }
 
     .hero-image {
-        height: 180px;
+
+        height: 200px;
     }
 }
