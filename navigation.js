@@ -49,25 +49,20 @@ if (header) {
     const currentPage =
         window.location.pathname.split("/").pop();
 
-
     const navigationLinks =
         document.querySelectorAll(".top-navigation a");
-
 
     navigationLinks.forEach(function (link) {
 
         const linkPage =
             link.getAttribute("href");
 
-
         if (
             linkPage === currentPage ||
             (currentPage === "" &&
-            linkPage === "index.html")
+             linkPage === "index.html")
         ) {
-
             link.classList.add("active");
-
         }
 
     });
@@ -81,7 +76,6 @@ if (header) {
 
 const footer =
     document.getElementById("site-footer");
-
 
 if (footer) {
 
