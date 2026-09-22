@@ -7,16 +7,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const header = `
         <header class="site-header">
 
+            <!-- NAME -->
             <div class="logo-area">
                 Lauren<br>Bock
             </div>
 
+
+            <!-- HEADER RIGHT SIDE -->
             <div class="header-content">
 
+                <!-- DESCRIPTION -->
                 <div class="header-intro">
                     Personal portfolio and professional website
                 </div>
 
+
+                <!-- TOP NAVIGATION -->
                 <nav class="top-navigation">
 
                     <a href="index.html" data-page="index.html">
@@ -48,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =========================
-       ADD HEADER TO PAGE
+       ADD HEADER
     ========================= */
 
     const headerContainer =
