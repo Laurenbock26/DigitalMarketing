@@ -52,7 +52,6 @@ a:hover {
 ========================= */
 
 .site-header {
-
     display: grid;
 
     grid-template-columns: 190px 1fr;
@@ -68,7 +67,6 @@ a:hover {
 ========================= */
 
 .logo-area {
-
     display: flex;
 
     align-items: center;
@@ -92,7 +90,6 @@ a:hover {
 ========================= */
 
 .header-content {
-
     display: flex;
 
     flex-direction: column;
@@ -104,7 +101,6 @@ a:hover {
 ========================= */
 
 .header-intro {
-
     flex: 1;
 
     padding: 22px 30px;
@@ -120,7 +116,6 @@ a:hover {
 ========================= */
 
 .top-navigation {
-
     min-height: 43px;
 
     border-top: 1px solid black;
@@ -135,24 +130,23 @@ a:hover {
 }
 
 .top-navigation a {
-
     padding: 8px 16px;
 
     font-size: 20px;
 }
 
 .top-navigation a:hover {
-
     background-color: #f1f1f1;
 
     text-decoration: none;
 }
 
 
-/* ACTIVE PAGE */
+/* =========================
+   ACTIVE PAGE
+========================= */
 
 .top-navigation a.active {
-
     font-weight: bold;
 }
 
@@ -162,85 +156,47 @@ a:hover {
 ========================= */
 
 .main-content {
-
     width: 80%;
 
     max-width: 1050px;
 
     margin: 0 auto;
 
-    padding: 25px 0 55px 0;
+    padding: 55px 0 55px 0;
 }
 
 
 /* =========================
-   HERO IMAGE
-========================= */
-
-.hero-image {
-
-    width: 100%;
-
-    height: 255px;
-
-    border: 1px solid black;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    margin-bottom: 30px;
-
-    overflow: hidden;
-}
-
-
-/* IF YOU ADD AN IMAGE */
-
-.hero-image img {
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-}
-
-
-/* TEMPORARY HERO TEXT */
-
-.hero-placeholder {
-
-    font-size: 30px;
-}
-
-
-/* =========================
-   MAIN CONTENT TEXT
+   CONTENT
 ========================= */
 
 .content-section {
-
     width: 100%;
 }
 
 
-.content-section h1 {
+/* =========================
+   MAIN HOME PAGE HEADING
+========================= */
 
-    font-size: 38px;
+.content-section h1 {
+    font-size: 65px;
 
     font-weight: normal;
 
+    line-height: 1.15;
+
     margin-top: 0;
 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 
-.content-section h2 {
+/* =========================
+   OTHER HEADINGS
+========================= */
 
+.content-section h2 {
     font-size: 28px;
 
     font-weight: normal;
@@ -251,8 +207,11 @@ a:hover {
 }
 
 
-.content-section p {
+/* =========================
+   PARAGRAPHS
+========================= */
 
+.content-section p {
     font-size: 19px;
 
     line-height: 1.6;
@@ -266,7 +225,6 @@ a:hover {
 ========================= */
 
 .site-footer {
-
     border-top: 1px solid black;
 
     padding: 15px 20px;
@@ -276,9 +234,7 @@ a:hover {
     font-size: 16px;
 }
 
-
 .site-footer p {
-
     margin: 5px 0;
 }
 
@@ -290,7 +246,6 @@ a:hover {
 @media screen and (max-width: 900px) {
 
     .website-container {
-
         width: 100%;
 
         border-left: none;
@@ -300,13 +255,11 @@ a:hover {
 
 
     .site-header {
-
         grid-template-columns: 1fr;
     }
 
 
     .logo-area {
-
         border-right: none;
 
         border-bottom: 1px solid black;
@@ -316,13 +269,11 @@ a:hover {
 
 
     .header-intro {
-
         text-align: center;
     }
 
 
     .top-navigation {
-
         justify-content: center;
 
         flex-wrap: wrap;
@@ -332,7 +283,6 @@ a:hover {
 
 
     .top-navigation a {
-
         padding: 8px 10px;
 
         font-size: 16px;
@@ -340,15 +290,13 @@ a:hover {
 
 
     .main-content {
-
         width: 90%;
 
-        padding: 25px 0 40px 0;
+        padding: 40px 0;
     }
 
 
-    .hero-image {
-
-        height: 200px;
+    .content-section h1 {
+        font-size: 45px;
     }
 }
