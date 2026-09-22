@@ -53,6 +53,11 @@ a:hover {
     border-bottom: 1px solid black;
 }
 
+
+/* =========================
+   NAME/LOGO AREA
+========================= */
+
 .logo-area {
     display: flex;
     align-items: center;
@@ -63,6 +68,11 @@ a:hover {
     line-height: 1.25;
     text-align: center;
 }
+
+
+/* =========================
+   HEADER CONTENT
+========================= */
 
 .header-content {
     display: flex;
@@ -79,7 +89,7 @@ a:hover {
 
 
 /* =========================
-   NAVIGATION
+   TOP NAVIGATION
 ========================= */
 
 .top-navigation {
@@ -128,7 +138,7 @@ a:hover {
 
 
 /* =========================
-   HEADINGS
+   HOMEPAGE HEADING
 ========================= */
 
 .home-content h1 {
@@ -138,6 +148,11 @@ a:hover {
     font-weight: normal;
     line-height: 1.15;
 }
+
+
+/* =========================
+   OTHER PAGE HEADINGS
+========================= */
 
 .content-section h1 {
     margin-top: 0;
@@ -191,15 +206,16 @@ a:hover {
 ========================= */
 
 .survey-section {
+    width: 100%;
     margin-top: 50px;
     padding-top: 30px;
-    border-top: 1px solid #dddddd;
+    border-top: 1px solid #c79ca6;
 }
 
 .survey-section iframe {
     display: block;
     width: 100%;
-    margin-top: 20px;
+    margin: 0;
     border: none;
 }
 
@@ -231,7 +247,7 @@ a:hover {
 
 
 /* ==========================================
-   LIGHT PASTEL PINK HOMEPAGE WITH BROWN TEXT
+   PASTEL-PINK HOMEPAGE WITH BROWN TEXT
 ========================================== */
 
 body.home-page {
@@ -269,6 +285,7 @@ body.home-page .top-navigation a {
 body.home-page .top-navigation a:hover {
     background-color: #f2cbd4;
     color: #533328;
+    text-decoration: none;
 }
 
 body.home-page .top-navigation a.active {
@@ -292,11 +309,6 @@ body.home-page .survey-section {
     border-top-color: #c79ca6;
 }
 
-body.home-page .survey-section h2,
-body.home-page .survey-section p {
-    color: #6b4435;
-}
-
 body.home-page .site-footer {
     color: #6b4435;
     border-top-color: #8a6252;
@@ -312,6 +324,7 @@ body.home-page .site-footer a {
 ========================= */
 
 @media screen and (max-width: 1000px) {
+
     .site-header {
         grid-template-columns: 170px 1fr;
     }
@@ -336,6 +349,7 @@ body.home-page .site-footer a {
 ========================= */
 
 @media screen and (max-width: 750px) {
+
     .website-container {
         width: 90%;
     }
