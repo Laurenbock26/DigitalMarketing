@@ -54,14 +54,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =========================
-       ADD HEADER
+       ADD HEADER TO PAGE
     ========================= */
 
     const headerContainer =
         document.getElementById("site-header");
 
     if (headerContainer) {
+
         headerContainer.innerHTML = header;
+
     }
 
 
@@ -72,8 +74,11 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentPage =
         window.location.pathname.split("/").pop();
 
+
     if (currentPage === "") {
+
         currentPage = "index.html";
+
     }
 
 
@@ -84,10 +89,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const navigationLinks =
         document.querySelectorAll(".top-navigation a");
 
+
     navigationLinks.forEach(function (link) {
 
-        if (link.getAttribute("data-page") === currentPage) {
+        if (
+            link.getAttribute("data-page")
+            === currentPage
+        ) {
+
             link.classList.add("active");
+
         }
 
     });
@@ -115,8 +126,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const footerContainer =
         document.getElementById("site-footer");
 
+
     if (footerContainer) {
+
         footerContainer.innerHTML = footer;
+
     }
 
 });
