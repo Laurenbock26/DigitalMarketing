@@ -119,4 +119,539 @@ a:hover {
 }
 
 .top-navigation a:hover {
-    background
+    background-color: #f1f1f1;
+    text-decoration: none;
+}
+
+.top-navigation a.active {
+    background-color: white;
+    font-weight: bold;
+}
+
+
+/* =========================
+   PAGE CONTENT
+========================= */
+
+.home-page-content {
+    width: 90%;
+    max-width: 1250px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 50px;
+    padding-bottom: 55px;
+}
+
+.content-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   HOMEPAGE HEADING
+========================= */
+
+.home-content h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 65px;
+    font-weight: normal;
+    line-height: 1.15;
+}
+
+
+/* =========================
+   OTHER PAGE HEADINGS
+========================= */
+
+.content-section h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.content-section h2 {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.25;
+}
+
+.content-section h2:first-child {
+    margin-top: 0;
+}
+
+
+/* =========================
+   PARAGRAPHS
+========================= */
+
+.home-content p,
+.content-section p {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 1.65;
+}
+
+
+/* =========================
+   CONTACT LINKS
+========================= */
+
+.content-section a {
+    text-decoration: underline;
+}
+
+.content-section a:hover {
+    font-weight: bold;
+}
+
+
+/* =========================
+   GOOGLE FORM
+========================= */
+
+.survey-section {
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #c79ca6;
+}
+
+.survey-section iframe {
+    display: block;
+    width: 100%;
+    margin: 0;
+    border: none;
+}
+
+
+/* =========================
+   REMOVE OLD SIDEBARS
+========================= */
+
+.left-sidebar,
+.right-sidebar {
+    display: none !important;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+    padding: 18px 20px;
+    border-top: 1px solid black;
+    text-align: center;
+    font-size: 17px;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+
+/* ==========================================
+   PASTEL-PINK HOMEPAGE WITH BROWN TEXT
+========================================== */
+
+body.home-page {
+    background-color: #f7dfe5;
+    color: #6b4435;
+}
+
+body.home-page .website-container {
+    background-color: #fcecf0;
+    border-left-color: #8a6252;
+    border-right-color: #8a6252;
+}
+
+body.home-page .site-header,
+body.home-page .logo-area,
+body.home-page .header-content,
+body.home-page .header-intro,
+body.home-page .top-navigation,
+body.home-page .top-navigation a {
+    background-color: white;
+}
+
+body.home-page .site-header {
+    border-bottom-color: #8a6252;
+}
+
+body.home-page .logo-area {
+    color: #6b4435;
+    border-right-color: #8a6252;
+}
+
+body.home-page .header-intro {
+    color: #6b4435;
+}
+
+body.home-page .top-navigation {
+    border-top-color: #8a6252;
+}
+
+body.home-page .top-navigation a {
+    color: #6b4435;
+}
+
+body.home-page .top-navigation a:hover {
+    background-color: #f2cbd4;
+    color: #533328;
+}
+
+body.home-page .top-navigation a.active {
+    background-color: white;
+    color: #533328;
+    font-weight: bold;
+}
+
+body.home-page .home-content h1,
+body.home-page .home-content p {
+    color: #6b4435;
+}
+
+body.home-page .home-content h1 span {
+    color: #a05f68;
+}
+
+body.home-page .survey-section {
+    border-top-color: #c79ca6;
+}
+
+body.home-page .site-footer {
+    color: #6b4435;
+    border-top-color: #8a6252;
+}
+
+body.home-page .site-footer a {
+    color: #6b4435;
+}
+
+
+/* ==========================================
+   PASTEL-BLUE ABOUT PAGE WITH NAVY TEXT
+========================================== */
+
+body.about-page {
+    background-color: #d8edf7;
+    color: #17345c;
+}
+
+body.about-page .website-container {
+    background-color: #e8f5fb;
+    border-left-color: #17345c;
+    border-right-color: #17345c;
+}
+
+body.about-page .site-header,
+body.about-page .logo-area,
+body.about-page .header-content,
+body.about-page .header-intro,
+body.about-page .top-navigation,
+body.about-page .top-navigation a {
+    background-color: white;
+}
+
+body.about-page .site-header {
+    border-bottom-color: #17345c;
+}
+
+body.about-page .logo-area {
+    color: #17345c;
+    border-right-color: #17345c;
+}
+
+body.about-page .header-intro {
+    color: #17345c;
+}
+
+body.about-page .top-navigation {
+    border-top-color: #17345c;
+}
+
+body.about-page .top-navigation a {
+    color: #17345c;
+}
+
+body.about-page .top-navigation a:hover {
+    background-color: #d8edf7;
+    color: #0d2647;
+}
+
+body.about-page .top-navigation a.active {
+    background-color: white;
+    color: #0d2647;
+    font-weight: bold;
+}
+
+body.about-page .content-section h1,
+body.about-page .content-section h2,
+body.about-page .content-section p,
+body.about-page .content-section strong {
+    color: #17345c;
+}
+
+body.about-page .site-footer {
+    color: #17345c;
+    border-top-color: #17345c;
+}
+
+body.about-page .site-footer a {
+    color: #17345c;
+}
+
+
+/* ==========================================
+   PASTEL-GREEN EDUCATION PAGE
+   WITH MAROON TEXT
+========================================== */
+
+body.education-page {
+    background-color: #dcefe0;
+    color: #761f3b;
+}
+
+body.education-page .website-container {
+    background-color: #edf8ef;
+    border-left-color: #761f3b;
+    border-right-color: #761f3b;
+}
+
+body.education-page .site-header,
+body.education-page .logo-area,
+body.education-page .header-content,
+body.education-page .header-intro,
+body.education-page .top-navigation,
+body.education-page .top-navigation a {
+    background-color: white;
+}
+
+body.education-page .site-header {
+    border-bottom-color: #761f3b;
+}
+
+body.education-page .logo-area {
+    color: #761f3b;
+    border-right-color: #761f3b;
+}
+
+body.education-page .header-intro {
+    color: #761f3b;
+}
+
+body.education-page .top-navigation {
+    border-top-color: #761f3b;
+}
+
+body.education-page .top-navigation a {
+    color: #761f3b;
+}
+
+body.education-page .top-navigation a:hover {
+    background-color: #dcefe0;
+    color: #551329;
+}
+
+body.education-page .top-navigation a.active {
+    background-color: white;
+    color: #551329;
+    font-weight: bold;
+}
+
+body.education-page .content-section h1,
+body.education-page .content-section h2,
+body.education-page .content-section p,
+body.education-page .content-section strong {
+    color: #761f3b;
+}
+
+body.education-page .site-footer {
+    color: #761f3b;
+    border-top-color: #761f3b;
+}
+
+body.education-page .site-footer a {
+    color: #761f3b;
+}
+
+
+/* ==========================================
+   PASTEL-YELLOW PROFESSIONAL EXPERIENCE PAGE
+   WITH BROWN TEXT
+========================================== */
+
+body.experience-page {
+    background-color: #f8edbd;
+    color: #6b4435;
+}
+
+body.experience-page .website-container {
+    background-color: #fff7d6;
+    border-left-color: #6b4435;
+    border-right-color: #6b4435;
+}
+
+body.experience-page .site-header,
+body.experience-page .logo-area,
+body.experience-page .header-content,
+body.experience-page .header-intro,
+body.experience-page .top-navigation,
+body.experience-page .top-navigation a {
+    background-color: white;
+}
+
+body.experience-page .site-header {
+    border-bottom-color: #6b4435;
+}
+
+body.experience-page .logo-area {
+    color: #6b4435;
+    border-right-color: #6b4435;
+}
+
+body.experience-page .header-intro {
+    color: #6b4435;
+}
+
+body.experience-page .top-navigation {
+    border-top-color: #6b4435;
+}
+
+body.experience-page .top-navigation a {
+    color: #6b4435;
+}
+
+body.experience-page .top-navigation a:hover {
+    background-color: #f8edbd;
+    color: #4f3025;
+}
+
+body.experience-page .top-navigation a.active {
+    background-color: white;
+    color: #4f3025;
+    font-weight: bold;
+}
+
+body.experience-page .content-section h1,
+body.experience-page .content-section h2,
+body.experience-page .content-section p,
+body.experience-page .content-section strong {
+    color: #6b4435;
+}
+
+body.experience-page .site-footer {
+    color: #6b4435;
+    border-top-color: #6b4435;
+}
+
+body.experience-page .site-footer a {
+    color: #6b4435;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (max-width: 1000px) {
+
+    .site-header {
+        grid-template-columns: 170px 1fr;
+    }
+
+    .top-navigation a {
+        padding: 8px 10px;
+        font-size: 17px;
+    }
+
+    .home-page-content {
+        width: 90%;
+    }
+
+    .home-content h1 {
+        font-size: 48px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 750px) {
+
+    .website-container {
+        width: 90%;
+    }
+
+    .site-header {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-area {
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+    body.home-page .logo-area {
+        border-bottom-color: #8a6252;
+    }
+
+    body.about-page .logo-area {
+        border-bottom-color: #17345c;
+    }
+
+    body.education-page .logo-area {
+        border-bottom-color: #761f3b;
+    }
+
+    body.experience-page .logo-area {
+        border-bottom-color: #6b4435;
+    }
+
+    .header-intro {
+        text-align: center;
+    }
+
+    .top-navigation {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-right: 0;
+        white-space: normal;
+    }
+
+    .home-page-content {
+        width: 90%;
+        padding-top: 35px;
+    }
+
+    .home-content h1 {
+        font-size: 42px;
+    }
+
+    .content-section h1 {
+        font-size: 38px;
+    }
+
+    .content-section h2 {
+        font-size: 27px;
+    }
+
+    .home-content p,
+    .content-section p {
+        font-size: 18px;
+    }
+
+    .survey-section iframe {
+        height: 950px;
+    }
+}
