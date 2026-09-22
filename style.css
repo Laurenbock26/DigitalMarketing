@@ -425,8 +425,6 @@ body.education-page .website-container {
     border-right-color: #761f3b;
 }
 
-/* Keep the Education header and navigation white */
-
 body.education-page .site-header,
 body.education-page .logo-area,
 body.education-page .header-content,
@@ -485,6 +483,82 @@ body.education-page .site-footer a {
 }
 
 
+/* ==========================================
+   PASTEL-YELLOW PROFESSIONAL EXPERIENCE PAGE
+   WITH BROWN TEXT
+========================================== */
+
+body.experience-page {
+    background-color: #f8edbd;
+    color: #6b4435;
+}
+
+body.experience-page .website-container {
+    background-color: #fff7d6;
+    border-left-color: #6b4435;
+    border-right-color: #6b4435;
+}
+
+/* Keep the Experience header and navigation white */
+
+body.experience-page .site-header,
+body.experience-page .logo-area,
+body.experience-page .header-content,
+body.experience-page .header-intro,
+body.experience-page .top-navigation,
+body.experience-page .top-navigation a {
+    background-color: white;
+}
+
+body.experience-page .site-header {
+    border-bottom-color: #6b4435;
+}
+
+body.experience-page .logo-area {
+    color: #6b4435;
+    border-right-color: #6b4435;
+}
+
+body.experience-page .header-intro {
+    color: #6b4435;
+}
+
+body.experience-page .top-navigation {
+    border-top-color: #6b4435;
+}
+
+body.experience-page .top-navigation a {
+    color: #6b4435;
+}
+
+body.experience-page .top-navigation a:hover {
+    background-color: #f8edbd;
+    color: #4f3025;
+}
+
+body.experience-page .top-navigation a.active {
+    background-color: white;
+    color: #4f3025;
+    font-weight: bold;
+}
+
+body.experience-page .content-section h1,
+body.experience-page .content-section h2,
+body.experience-page .content-section p,
+body.experience-page .content-section strong {
+    color: #6b4435;
+}
+
+body.experience-page .site-footer {
+    color: #6b4435;
+    border-top-color: #6b4435;
+}
+
+body.experience-page .site-footer a {
+    color: #6b4435;
+}
+
+
 /* =========================
    TABLET
 ========================= */
@@ -539,6 +613,10 @@ body.education-page .site-footer a {
 
     body.education-page .logo-area {
         border-bottom-color: #761f3b;
+    }
+
+    body.experience-page .logo-area {
+        border-bottom-color: #6b4435;
     }
 
     .header-intro {
