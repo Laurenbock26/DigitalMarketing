@@ -1,28 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    /* =========================
-       HEADER
-    ========================= */
-
     const header = `
         <header class="site-header">
 
-            <!-- NAME -->
             <div class="logo-area">
                 Lauren<br>Bock
             </div>
 
-
-            <!-- HEADER RIGHT SIDE -->
             <div class="header-content">
 
-                <!-- DESCRIPTION -->
                 <div class="header-intro">
                     Personal portfolio and professional website
                 </div>
 
-
-                <!-- TOP NAVIGATION -->
                 <nav class="top-navigation">
 
                     <a href="index.html" data-page="index.html">
@@ -53,38 +43,21 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
 
 
-    /* =========================
-       ADD HEADER TO PAGE
-    ========================= */
-
     const headerContainer =
         document.getElementById("site-header");
 
     if (headerContainer) {
-
         headerContainer.innerHTML = header;
-
     }
 
-
-    /* =========================
-       FIND CURRENT PAGE
-    ========================= */
 
     let currentPage =
         window.location.pathname.split("/").pop();
 
-
     if (currentPage === "") {
-
         currentPage = "index.html";
-
     }
 
-
-    /* =========================
-       HIGHLIGHT CURRENT PAGE
-    ========================= */
 
     const navigationLinks =
         document.querySelectorAll(".top-navigation a");
@@ -92,21 +65,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     navigationLinks.forEach(function (link) {
 
-        if (
-            link.getAttribute("data-page")
-            === currentPage
-        ) {
-
+        if (link.getAttribute("data-page") === currentPage) {
             link.classList.add("active");
-
         }
 
     });
 
-
-    /* =========================
-       FOOTER
-    ========================= */
 
     const footer = `
         <footer class="site-footer">
@@ -126,11 +90,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const footerContainer =
         document.getElementById("site-footer");
 
-
     if (footerContainer) {
-
         footerContainer.innerHTML = footer;
-
     }
 
 });
