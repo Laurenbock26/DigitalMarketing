@@ -13,8 +13,11 @@ html {
 body {
     margin: 0;
     padding: 0;
+
     font-family: "Times New Roman", Times, serif;
+
     background-color: white;
+
     color: black;
 }
 
@@ -33,8 +36,10 @@ a:hover {
 ========================= */
 
 .website-container {
-    width: 100%;
+    width: 90%;
+
     max-width: 1600px;
+
     margin: 0 auto;
 
     border-left: 1px solid black;
@@ -48,6 +53,7 @@ a:hover {
 
 .site-header {
     display: grid;
+
     grid-template-columns: 215px 1fr;
 
     min-height: 150px;
@@ -69,6 +75,7 @@ a:hover {
     border-right: 1px solid black;
 
     font-size: 38px;
+
     line-height: 1.25;
 
     text-align: center;
@@ -83,6 +90,7 @@ a:hover {
 
 .header-content {
     display: flex;
+
     flex-direction: column;
 
     min-width: 0;
@@ -99,6 +107,7 @@ a:hover {
     padding: 25px 35px;
 
     font-size: 22px;
+
     line-height: 1.4;
 }
 
@@ -115,6 +124,7 @@ a:hover {
     display: flex;
 
     align-items: center;
+
     justify-content: flex-end;
 
     padding-right: 20px;
@@ -196,6 +206,7 @@ a:hover {
 
 .hero-image img {
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
@@ -223,6 +234,7 @@ a:hover {
     line-height: 1.15;
 
     margin-top: 0;
+
     margin-bottom: 25px;
 }
 
@@ -237,6 +249,7 @@ a:hover {
     font-weight: normal;
 
     margin-top: 35px;
+
     margin-bottom: 15px;
 }
 
@@ -251,32 +264,18 @@ a:hover {
     line-height: 1.65;
 
     margin-top: 0;
+
     margin-bottom: 25px;
 }
 
 
 /* =========================
-   QUICK LINKS
+   HIDE SIDE NAVIGATION
 ========================= */
-
-/* 
-   There should NOT be Quick Links
-   on the home page.
-*/
 
 .right-sidebar {
     display: none !important;
 }
-
-
-/* =========================
-   LEFT NAVIGATION
-========================= */
-
-/*
-   There should NOT be a left-side
-   navigation on the home page.
-*/
 
 .left-sidebar {
     display: none !important;
@@ -314,6 +313,7 @@ a:hover {
 
     .top-navigation a {
         padding: 8px 10px;
+
         font-size: 17px;
     }
 
@@ -333,12 +333,20 @@ a:hover {
 
 @media screen and (max-width: 750px) {
 
+    .website-container {
+        width: 100%;
+
+        border-left: none;
+        border-right: none;
+    }
+
     .site-header {
         grid-template-columns: 1fr;
     }
 
     .logo-area {
         border-right: none;
+
         border-bottom: 1px solid black;
     }
 
