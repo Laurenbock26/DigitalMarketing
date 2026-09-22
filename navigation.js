@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    /* =========================
+       HEADER
+    ========================= */
+
     const header = `
         <header class="site-header">
 
@@ -51,6 +55,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+    /* =========================
+       ACTIVE PAGE
+    ========================= */
+
     let currentPage =
         window.location.pathname.split("/").pop();
 
@@ -65,12 +73,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     navigationLinks.forEach(function (link) {
 
-        if (link.getAttribute("data-page") === currentPage) {
+        if (
+            link.getAttribute("data-page") === currentPage
+        ) {
             link.classList.add("active");
         }
 
     });
 
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     const footer = `
         <footer class="site-footer">
@@ -80,7 +94,10 @@ document.addEventListener("DOMContentLoaded", function () {
             </p>
 
             <p>
-                Contact: your-email@example.com
+                Contact:
+                <a href="mailto:laurenrox4055@gmail.com">
+                    laurenrox4055@gmail.com
+                </a>
             </p>
 
         </footer>
