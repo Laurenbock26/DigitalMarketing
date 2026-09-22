@@ -37,19 +37,22 @@ a:hover {
     max-width: 1600px;
     min-height: 100vh;
     margin: 0 auto;
+    background-color: white;
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
 
 
 /* =========================
-   HEADER
+   WHITE HEADER
 ========================= */
 
 .site-header {
     display: grid;
     grid-template-columns: 215px 1fr;
     min-height: 150px;
+    background-color: white;
+    color: #3f342f;
     border-bottom: 1px solid black;
 }
 
@@ -63,6 +66,8 @@ a:hover {
     align-items: center;
     justify-content: center;
     padding: 15px;
+    background-color: white;
+    color: #3f342f;
     border-right: 1px solid black;
     font-size: 38px;
     line-height: 1.25;
@@ -78,18 +83,21 @@ a:hover {
     display: flex;
     flex-direction: column;
     min-width: 0;
+    background-color: white;
 }
 
 .header-intro {
     flex: 1;
     padding: 25px 35px;
+    background-color: white;
+    color: #3f342f;
     font-size: 22px;
     line-height: 1.4;
 }
 
 
 /* =========================
-   TOP NAVIGATION
+   WHITE TOP NAVIGATION
 ========================= */
 
 .top-navigation {
@@ -98,12 +106,15 @@ a:hover {
     justify-content: flex-end;
     min-height: 43px;
     padding-right: 20px;
+    background-color: white;
     border-top: 1px solid black;
     white-space: nowrap;
 }
 
 .top-navigation a {
     padding: 8px 18px;
+    background-color: white;
+    color: #3f342f;
     font-size: 20px;
 }
 
@@ -261,6 +272,17 @@ body.home-page .website-container {
     border-right-color: #8a6252;
 }
 
+/* Keep the homepage header white */
+
+body.home-page .site-header,
+body.home-page .logo-area,
+body.home-page .header-content,
+body.home-page .header-intro,
+body.home-page .top-navigation,
+body.home-page .top-navigation a {
+    background-color: white;
+}
+
 body.home-page .site-header {
     border-bottom-color: #8a6252;
 }
@@ -285,24 +307,19 @@ body.home-page .top-navigation a {
 body.home-page .top-navigation a:hover {
     background-color: #f2cbd4;
     color: #533328;
-    text-decoration: none;
 }
 
 body.home-page .top-navigation a.active {
     color: #533328;
-    font-weight: bold;
 }
 
-body.home-page .home-content h1 {
+body.home-page .home-content h1,
+body.home-page .home-content p {
     color: #6b4435;
 }
 
 body.home-page .home-content h1 span {
     color: #a05f68;
-}
-
-body.home-page .home-content p {
-    color: #6b4435;
 }
 
 body.home-page .survey-section {
@@ -316,6 +333,79 @@ body.home-page .site-footer {
 
 body.home-page .site-footer a {
     color: #6b4435;
+}
+
+
+/* ==========================================
+   PASTEL-BLUE ABOUT PAGE WITH NAVY TEXT
+========================================== */
+
+body.about-page {
+    background-color: #d8edf7;
+    color: #17345c;
+}
+
+body.about-page .website-container {
+    background-color: #e8f5fb;
+    border-left-color: #17345c;
+    border-right-color: #17345c;
+}
+
+/* Keep the About page header white */
+
+body.about-page .site-header,
+body.about-page .logo-area,
+body.about-page .header-content,
+body.about-page .header-intro,
+body.about-page .top-navigation,
+body.about-page .top-navigation a {
+    background-color: white;
+}
+
+body.about-page .site-header {
+    border-bottom-color: #17345c;
+}
+
+body.about-page .logo-area {
+    color: #17345c;
+    border-right-color: #17345c;
+}
+
+body.about-page .header-intro {
+    color: #17345c;
+}
+
+body.about-page .top-navigation {
+    border-top-color: #17345c;
+}
+
+body.about-page .top-navigation a {
+    color: #17345c;
+}
+
+body.about-page .top-navigation a:hover {
+    background-color: #d8edf7;
+    color: #0d2647;
+}
+
+body.about-page .top-navigation a.active {
+    color: #0d2647;
+    font-weight: bold;
+}
+
+body.about-page .content-section h1,
+body.about-page .content-section h2,
+body.about-page .content-section p {
+    color: #17345c;
+}
+
+body.about-page .site-footer {
+    color: #17345c;
+    border-top-color: #17345c;
+}
+
+body.about-page .site-footer a {
+    color: #17345c;
 }
 
 
@@ -365,6 +455,10 @@ body.home-page .site-footer a {
 
     body.home-page .logo-area {
         border-bottom-color: #8a6252;
+    }
+
+    body.about-page .logo-area {
+        border-bottom-color: #17345c;
     }
 
     .header-intro {
