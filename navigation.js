@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+
     /* =========================
        TOP NAVIGATION
     ========================= */
@@ -64,7 +65,9 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("site-header");
 
     if (headerContainer) {
+
         headerContainer.innerHTML = header;
+
     }
 
 
@@ -75,12 +78,17 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentPage =
         window.location.pathname.split("/").pop();
 
+
     if (currentPage === "") {
+
         currentPage = "index.html";
+
     }
+
 
     const navigationLinks =
         document.querySelectorAll("[data-page]");
+
 
     navigationLinks.forEach(function (link) {
 
@@ -88,7 +96,9 @@ document.addEventListener("DOMContentLoaded", function () {
             link.getAttribute("data-page")
             === currentPage
         ) {
+
             link.classList.add("active");
+
         }
 
     });
@@ -116,8 +126,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const footerContainer =
         document.getElementById("site-footer");
 
+
     if (footerContainer) {
+
         footerContainer.innerHTML = footer;
+
     }
 
 });
