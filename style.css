@@ -1,342 +1,223 @@
+/* =========================
+   GENERAL PAGE STYLING
+========================= */
+
 * {
-  box-sizing: border-box;
-  }
+    box-sizing: border-box;
+}
 
 html {
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 
-```
-font-family: "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif;
 
-background-color: white;
+    background-color: white;
 
-color: black;
-```
-
+    color: black;
 }
 
 a {
-color: black;
-text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
 a:hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
 
+
 /* =========================
-WEBSITE CONTAINER
+   WEBSITE CONTAINER
 ========================= */
 
 .website-container {
-width: 90%;
-max-width: 1400px;
+    width: 90%;
 
-```
-margin: 0 auto;
+    max-width: 1400px;
 
-border-left: 1px solid black;
-border-right: 1px solid black;
-```
+    margin: 0 auto;
 
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
+
 /* =========================
-HEADER
+   HEADER
 ========================= */
 
 .site-header {
-display: grid;
 
-```
-grid-template-columns: 190px 1fr;
+    display: grid;
 
-min-height: 115px;
+    grid-template-columns: 190px 1fr;
 
-border-bottom: 1px solid black;
-```
+    min-height: 115px;
 
+    border-bottom: 1px solid black;
 }
 
+
 /* =========================
-NAME
+   LAUREN BOCK
 ========================= */
 
 .logo-area {
-display: flex;
 
-```
-align-items: flex-start;
-justify-content: flex-start;
+    display: flex;
 
-padding: 18px 15px;
+    align-items: center;
 
-border-right: 1px solid black;
+    justify-content: center;
 
-font-size: 38px;
+    border-right: 1px solid black;
 
-line-height: 1.1;
+    font-size: 38px;
 
-text-align: left;
-```
+    line-height: 1.2;
 
+    text-align: center;
+
+    padding: 15px;
 }
 
+
 /* =========================
-RIGHT SIDE OF HEADER
+   HEADER RIGHT SIDE
 ========================= */
 
 .header-content {
-display: flex;
 
-```
-flex-direction: column;
+    display: flex;
 
-justify-content: space-between;
-```
-
+    flex-direction: column;
 }
 
+
 /* =========================
-HEADER DESCRIPTION
+   HEADER DESCRIPTION
 ========================= */
 
 .header-intro {
-padding: 18px 25px;
 
-```
-font-size: 20px;
+    flex: 1;
 
-line-height: 1.4;
-```
+    padding: 22px 30px;
 
+    font-size: 20px;
+
+    line-height: 1.4;
 }
 
+
 /* =========================
-NAVIGATION
+   TOP NAVIGATION
 ========================= */
 
 .top-navigation {
-min-height: 45px;
 
-```
-border-top: 1px solid black;
+    min-height: 43px;
 
-display: flex;
+    border-top: 1px solid black;
 
-align-items: center;
+    display: flex;
 
-justify-content: flex-end;
+    align-items: center;
 
-padding: 0 25px;
+    justify-content: flex-end;
 
-gap: 28px;
-```
-
+    padding-right: 15px;
 }
 
 .top-navigation a {
-padding: 8px 4px;
 
-```
-font-size: 20px;
+    padding: 8px 16px;
 
-white-space: nowrap;
-```
-
+    font-size: 20px;
 }
 
 .top-navigation a:hover {
-background-color: #f1f1f1;
 
-```
-text-decoration: none;
-```
+    background-color: #f1f1f1;
 
+    text-decoration: none;
 }
+
+
+/* ACTIVE PAGE */
 
 .top-navigation a.active {
-font-weight: bold;
+
+    font-weight: bold;
 }
 
+
 /* =========================
-MAIN CONTENT
+   MAIN CONTENT
 ========================= */
 
 .main-content {
-width: 80%;
 
-```
-max-width: 1050px;
+    width: 80%;
 
-margin: 0 auto;
+    max-width: 1050px;
 
-padding: 55px 0;
-```
+    margin: 0 auto;
 
+    padding: 55px 0 55px 0;
 }
 
+
 /* =========================
-HERO IMAGE
+   HERO IMAGE
 ========================= */
 
-.hero-image {
-width: 55%;
+/* Hero image removed from home page */
 
-```
-height: 230px;
-
-margin: 0 auto 55px auto;
-
-border: 1px solid black;
-
-display: flex;
-
-align-items: center;
-
-justify-content: center;
-
-font-size: 24px;
-```
-
-}
 
 /* =========================
-CONTENT
+   MAIN CONTENT TEXT
 ========================= */
 
 .content-section {
-width: 100%;
+
+    width: 100%;
 }
+
 
 .content-section h1 {
-font-size: 65px;
 
-```
-font-weight: normal;
+    font-size: 65px;
 
-line-height: 1.1;
+    font-weight: normal;
 
-margin: 0 0 65px 0;
-```
+    margin-top: 0;
 
+    margin-bottom: 20px;
 }
 
-.content-section h1 span {
-display: block;
+
+.content-section h2 {
+
+    font-size: 28px;
+
+    font-weight: normal;
+
+    margin-top: 30px;
+
+    margin-bottom: 12px;
 }
 
-.content-section h1 span:last-child {
-font-size: 45px;
-
-```
-margin-top: 12px;
-```
-
-}
 
 .content-section p {
-font-size: 19px;
 
-```
-line-height: 1.6;
+    font-size: 19px;
 
-margin-bottom: 20px;
-```
+    line-height: 1.6;
 
-}
-
-/* =========================
-FOOTER
-========================= */
-
-.site-footer {
-border-top: 1px solid black;
-
-```
-padding: 15px 20px;
-
-text-align: center;
-
-font-size: 16px;
-```
-
-}
-
-.site-footer p {
-margin: 5px 0;
-}
-
-/* =========================
-MOBILE
-========================= */
-
-@media screen and (max-width: 900px) {
-
-```
-.website-container {
-    width: 100%;
-
-    border-left: none;
-    border-right: none;
-}
-
-.site-header {
-    grid-template-columns: 1fr;
-}
-
-.logo-area {
-    border-right: none;
-
-    border-bottom: 1px solid black;
-
-    padding: 18px;
-}
-
-.header-intro {
-    text-align: center;
-}
-
-.top-navigation {
-    justify-content: center;
-
-    flex-wrap: wrap;
-
-    gap: 10px;
-
-    padding: 5px 10px;
-}
-
-.top-navigation a {
-    font-size: 16px;
-
-    padding: 8px 6px;
-}
-
-.main-content {
-    width: 90%;
-
-    padding: 40px 0;
-}
-
-.hero-image {
-    width: 80%;
-
-    height: 180px;
-}
-
-.content-section h1 {
-    font-size: 48px;
-}
-
-.content-section h1 span:last-child {
-    font-size: 34px;
-}
-```
-
-}
+    margin-bottom
