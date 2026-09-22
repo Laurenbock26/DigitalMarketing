@@ -13,11 +13,8 @@ html {
 body {
     margin: 0;
     padding: 0;
-
     background-color: white;
-
     color: black;
-
     font-family: "Times New Roman", Times, serif;
 }
 
@@ -37,13 +34,9 @@ a:hover {
 
 .website-container {
     width: 90%;
-
     max-width: 1600px;
-
-    margin: 0 auto;
-
     min-height: 100vh;
-
+    margin: 0 auto;
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
@@ -55,101 +48,59 @@ a:hover {
 
 .site-header {
     display: grid;
-
     grid-template-columns: 215px 1fr;
-
     min-height: 150px;
-
     border-bottom: 1px solid black;
 }
 
-
-/* =========================
-   LAUREN BOCK
-========================= */
-
 .logo-area {
     display: flex;
-
     align-items: center;
     justify-content: center;
-
     padding: 15px;
-
     border-right: 1px solid black;
-
     font-size: 38px;
-
     line-height: 1.25;
-
     text-align: center;
 }
 
-
-/* =========================
-   HEADER CONTENT
-========================= */
-
 .header-content {
     display: flex;
-
     flex-direction: column;
-
     min-width: 0;
 }
 
-
-/* =========================
-   HEADER DESCRIPTION
-========================= */
-
 .header-intro {
     flex: 1;
-
     padding: 25px 35px;
-
     font-size: 22px;
-
     line-height: 1.4;
 }
 
 
 /* =========================
-   TOP NAVIGATION
+   NAVIGATION
 ========================= */
 
 .top-navigation {
-    min-height: 43px;
-
-    border-top: 1px solid black;
-
     display: flex;
-
     align-items: center;
-
     justify-content: flex-end;
-
+    min-height: 43px;
     padding-right: 20px;
-
+    border-top: 1px solid black;
     white-space: nowrap;
 }
 
 .top-navigation a {
     padding: 8px 18px;
-
     font-size: 20px;
 }
 
 .top-navigation a:hover {
     background-color: #f1f1f1;
-
     text-decoration: none;
 }
-
-
-/* =========================
-   ACTIVE PAGE
-========================= */
 
 .top-navigation a.active {
     font-weight: bold;
@@ -157,70 +108,52 @@ a:hover {
 
 
 /* =========================
-   ALL PAGE CONTENT
+   PAGE CONTENT
 ========================= */
 
 .home-page-content {
     width: 90%;
-
     max-width: 1250px;
-
-    margin-left: auto;
     margin-right: auto;
-
+    margin-left: auto;
     padding-top: 50px;
     padding-bottom: 55px;
 }
 
-
-/* =========================
-   CONTENT SECTION
-========================= */
-
 .content-section {
     width: 100%;
-
     margin: 0;
-
     padding: 0;
 }
 
 
 /* =========================
-   HOME PAGE HEADING
+   HEADINGS
 ========================= */
 
 .home-content h1 {
-    font-size: 65px;
-
-    font-weight: normal;
-
-    line-height: 1.15;
-
     margin-top: 0;
-
     margin-bottom: 30px;
+    font-size: 65px;
+    font-weight: normal;
+    line-height: 1.15;
 }
 
-
-/* =========================
-   OTHER PAGE HEADINGS
-========================= */
+.content-section h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 1.2;
+}
 
 .content-section h2 {
-    font-size: 30px;
-
-    font-weight: normal;
-
-    line-height: 1.25;
-
     margin-top: 35px;
-
     margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.25;
 }
-
-
-/* First heading on each inside page */
 
 .content-section h2:first-child {
     margin-top: 0;
@@ -231,14 +164,12 @@ a:hover {
    PARAGRAPHS
 ========================= */
 
+.home-content p,
 .content-section p {
-    font-size: 20px;
-
-    line-height: 1.65;
-
     margin-top: 0;
-
     margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 1.65;
 }
 
 
@@ -252,6 +183,24 @@ a:hover {
 
 .content-section a:hover {
     font-weight: bold;
+}
+
+
+/* =========================
+   GOOGLE FORM
+========================= */
+
+.survey-section {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #dddddd;
+}
+
+.survey-section iframe {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
 }
 
 
@@ -270,12 +219,9 @@ a:hover {
 ========================= */
 
 .site-footer {
-    border-top: 1px solid black;
-
     padding: 18px 20px;
-
+    border-top: 1px solid black;
     text-align: center;
-
     font-size: 17px;
 }
 
@@ -284,19 +230,94 @@ a:hover {
 }
 
 
+/* ==========================================
+   LIGHT PASTEL PINK HOMEPAGE WITH BROWN TEXT
+========================================== */
+
+body.home-page {
+    background-color: #f7dfe5;
+    color: #6b4435;
+}
+
+body.home-page .website-container {
+    background-color: #fcecf0;
+    border-left-color: #8a6252;
+    border-right-color: #8a6252;
+}
+
+body.home-page .site-header {
+    border-bottom-color: #8a6252;
+}
+
+body.home-page .logo-area {
+    color: #6b4435;
+    border-right-color: #8a6252;
+}
+
+body.home-page .header-intro {
+    color: #6b4435;
+}
+
+body.home-page .top-navigation {
+    border-top-color: #8a6252;
+}
+
+body.home-page .top-navigation a {
+    color: #6b4435;
+}
+
+body.home-page .top-navigation a:hover {
+    background-color: #f2cbd4;
+    color: #533328;
+}
+
+body.home-page .top-navigation a.active {
+    color: #533328;
+    font-weight: bold;
+}
+
+body.home-page .home-content h1 {
+    color: #6b4435;
+}
+
+body.home-page .home-content h1 span {
+    color: #a05f68;
+}
+
+body.home-page .home-content p {
+    color: #6b4435;
+}
+
+body.home-page .survey-section {
+    border-top-color: #c79ca6;
+}
+
+body.home-page .survey-section h2,
+body.home-page .survey-section p {
+    color: #6b4435;
+}
+
+body.home-page .site-footer {
+    color: #6b4435;
+    border-top-color: #8a6252;
+}
+
+body.home-page .site-footer a {
+    color: #6b4435;
+}
+
+
 /* =========================
    TABLET
 ========================= */
 
 @media screen and (max-width: 1000px) {
-
     .site-header {
         grid-template-columns: 170px 1fr;
     }
 
     .top-navigation a {
         padding: 8px 10px;
-
         font-size: 17px;
     }
 
@@ -315,7 +336,6 @@ a:hover {
 ========================= */
 
 @media screen and (max-width: 750px) {
-
     .website-container {
         width: 90%;
     }
@@ -326,8 +346,11 @@ a:hover {
 
     .logo-area {
         border-right: none;
-
         border-bottom: 1px solid black;
+    }
+
+    body.home-page .logo-area {
+        border-bottom-color: #8a6252;
     }
 
     .header-intro {
@@ -336,17 +359,13 @@ a:hover {
 
     .top-navigation {
         justify-content: center;
-
         flex-wrap: wrap;
-
-        white-space: normal;
-
         padding-right: 0;
+        white-space: normal;
     }
 
     .home-page-content {
         width: 90%;
-
         padding-top: 35px;
     }
 
@@ -354,11 +373,20 @@ a:hover {
         font-size: 42px;
     }
 
+    .content-section h1 {
+        font-size: 38px;
+    }
+
     .content-section h2 {
         font-size: 27px;
     }
 
+    .home-content p,
     .content-section p {
         font-size: 18px;
+    }
+
+    .survey-section iframe {
+        height: 950px;
     }
 }
